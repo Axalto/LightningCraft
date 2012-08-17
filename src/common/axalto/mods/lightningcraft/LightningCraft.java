@@ -43,9 +43,6 @@ public class LightningCraft
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		// Initializing Metadata
-		event.getModMetadata().version = "In-Dev 1.0";
-		
 		// Loading in Configuration Data
 		Configuration cfg = new Configuration(event.getSuggestedConfigurationFile());
 		try {
