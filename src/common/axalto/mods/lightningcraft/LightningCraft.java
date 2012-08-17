@@ -24,10 +24,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 		clientSideRequired = true,
 		serverSideRequired = false,
 		packetHandler = PacketHandler.class )
-public class MailCraft
+public class LightningCraft
 {
 	@Instance
-	public static MailCraft instance;
+	public static LightningCraft instance;
 	
 	@SidedProxy(clientSide = "axalto.mods.lightningcraft.ClientProxy", serverSide = "axalto.mods.lightningcraft.CommonProxy")
 	public static CommonProxy proxy;
