@@ -17,6 +17,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = "LightningCraft", name = "LightningCraft", version = "In-Dev 1.0")
 @NetworkMod(
@@ -70,6 +71,9 @@ public class LightningCraft
 		
 		// Register Blocks
 		GameRegistry.registerBlock(lightningBoxBlock);
+
+		// Add Localization Data
+		LanguageRegistry.instance().addStringLocalization(lightningBoxBlock.getBlockName() + ".name", "en_US", "Lightning Box");
 		
 		// Register Recipes
 		GameRegistry.addRecipe(new ItemStack(lightningBoxBlock, 1),
