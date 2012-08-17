@@ -1,0 +1,1 @@
+You need to manually move these into the minecraft.jar for them to work.
